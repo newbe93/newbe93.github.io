@@ -45,9 +45,17 @@ const onSubmitHandle = (event) => {
 };
 
 toDoPopForm.addEventListener("submit", onSubmitHandle);
-toDo.addEventListener("click", () => {
-  toDoPop.classList.toggle("hidden");
-});
+toDo.addEventListener(
+  "click",
+  (event) => {
+    if (event.target !== event.currentTarget) {
+      return;
+    }
+    toDoPop.classList.toggle("hidden");
+    event.stopPropagation();
+  },
+  false
+);
 const savedToDOs = localStorage.getItem(TODOLIST_KEY);
 if (savedToDOs !== null) {
   const parsedToDos = JSON.parse(savedToDOs);
