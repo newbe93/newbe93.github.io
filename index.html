@@ -1,1 +1,73 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo"><img width="50px" src="browser-chrome.svg" alt="logo" /></div>
+        <div class="weather">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="main">
+        <div class="info">
+          <h2 class="hello">Hello, What's your name?</h2>
+          <form action="/" id="name_form">
+            <input type="text" class="name" />
+          </form>
+        </div>
+        <div class="prompt hidden">
+          <div class="clock"></div>
+          <div class="greeting"></div>
+          <div class="todo-section">
+            <div class="ask">
+              <div class="focus">What is your main focus for today?</div>
+              <form action="/" id="todo-form">
+                <input type="text" class="todo-input" />
+              </form>
+            </div>
+            <div class="main-todo hidden">
+              <div>TODAY</div>
+              <div class="todo-list">
+                <span></span>
+                <button>❌</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="quote-section">
+          <div class="author"></div>
+          <div class="quotes"></div>
+        </div>
+
+        <div class="todo">
+          Todo
+          <div class="todo-pop hidden">
+            <p>Today</p>
+            <ul class="todo-pop-list"></ul>
+            <form action="/" id="todo-pop-form">
+              <input type="text" placeholder="New Todo" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="greetings.js"></script>
+    <script src="js_clock.js"></script>
+    <script src="quotes.js"></script>
+    <script src="backgroud.js"></script>
+    <script src="maintodo.js"></script>
+    <script src="todopop.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
