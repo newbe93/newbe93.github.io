@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import surfing from '../assets/lottie/surfing.json'
-import scrollDown from '../assets/lottie/scroll_down.json'
-import waveBottom from '../assets/lottie/wave_bottom.json'
-import Lottie from 'lottie-react';
+// import surfing from '../assets/lottie/surfing.json'
+// import scrollDown from '../assets/lottie/scroll_down.json'
+// import waveBottom from '../assets/lottie/wave_bottom.json'
+// import Lottie from 'lottie-react';
 
 // GSAP 플러그인 등록
 gsap.registerPlugin(ScrollTrigger);

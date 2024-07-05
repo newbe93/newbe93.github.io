@@ -22,8 +22,8 @@ export default defineConfig(({ command }) => ({
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
-      '@styles': path.resolve(__dirname, './src/styles'),
+      '@': path.resolve(__dirname, 'src'),
+      '@styles': path.resolve(__dirname, 'src/styles'),
     }
   },
   css: {
