@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    --bg-color : white;
+    background-color: var(--bg-color);
+}
+
+.parallax__item {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-text{
+    width : 75px;
+    height: 100px;
+    background-image: url('./src/assets/alphabetNoBg.png');
+    background-repeat: no-repeat;
+    background-size: 600px 1000px;
+    z-index: 10;
+    transform: scale(0.5);
+    transform-origin: top left;
+    width: 56.25px;
+    height: 75px;
+    background-size: 450px 750px;
+}
+
+.title-text {
+    width: 37.5px;  /* 75px * 0.5 */
+    height: 50px;   /* 100px * 0.5 */
+    background-size: 300px 500px;  /* 600px * 0.5, 1000px * 0.5 */
+}
+
+.title-text-alphabet-A {
+    background-position: -27px -25px;
+}
+
+.title-text-alphabet-D {
+    background-position: -182.5px -25px;
+}
+
+.title-text-alphabet-E {
+    background-position: -235px -25px;
+}
+
+.title-text-alphabet-G {
+    background-position: -70px -92.5px;
+}
+
+.title-text-alphabet-H {
+    background-position: -112.5px -92.5px;
+}
+
+.title-text-alphabet-I {
+    background-position: -152.5px -92.5px;
+}
+
+.title-text-alphabet-L {
+    background-position: -27px -160px;
+}
+
+.title-text-alphabet-M {
+    background-position: -78px -160px;
+}
+
+.title-text-alphabet-N {
+    background-position: -135px -160px;
+}
+
+.title-text-alphabet-O {
+    background-position: -185px -160px;
+}
+
+.title-text-alphabet-S {
+    background-position: -132.5px -227.5px;
+}
+
+.title-text-alphabet-U {
+    background-position: -237.5px -227.5px;
+}
+
+.title-text-alphabet-Y {
+    background-position: -184.5px -292px;
+}
+
+.parallax__item > div > div:nth-child(2) .title-text-alphabet-S {
+    margin-left: -12px;  /* -24px * 0.5 */
+}
+
+.parallax__item > div > div:nth-child(3) .title-text-alphabet-S {
+    margin-right: -10px;  /* -20px * 0.5 */
+}
+
+.spacing {
+    margin: 0 13.75px;  /* 27.5px * 0.5 */
+}
+
+/* lottie */
+.lottie-item{
+    position: absolute;
+    left: 5%;
+    top: 22%;
+    width: 200px;
+    height: 200px;
+}
+
+.lottie-scrollDown{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.lottie-wave-bottom{
+    position: absolute;
+    bottom: 55%;
+}
+
+@media (min-width : 392px){
+    .lottie-item {
+        width:500px;
+        height: 500px;
+    }
+
+    .title-text{
+        width : 75px;
+        height: 100px;
+        background-size: 600px 1000px;
+    }
+
+    .title-text-alphabet-A{
+    background-position: -54px -50px;
+}
+
+.title-text-alphabet-D{
+    background-position: -365px -50px;
+}
+
+.title-text-alphabet-E{
+    background-position: -470px -50px;
+}
+
+.title-text-alphabet-G{
+    background-position: -140px -185px;
+}
+
+.title-text-alphabet-H{
+    background-position: -225px -185px;
+}
+
+.title-text-alphabet-I{
+    background-position: -305px -185px;
+}
+
+.title-text-alphabet-L{
+    background-position: -54px -320px;
+}
+
+.title-text-alphabet-M{
+    background-position: -156px -320px;
+}
+
+.title-text-alphabet-N{
+    background-position: -270px -320px;
+}
+
+.title-text-alphabet-O{
+    background-position: -370px -320px;
+}
+
+.title-text-alphabet-S{
+    /* scale: 1.1; */
+    background-position: -265px -455px;
+}
+
+.title-text-alphabet-U{
+    background-position: -475px -455px;
+}
+
+.title-text-alphabet-Y{
+    background-position: -369px -584px;
+}
+
+.spacing{
+    margin: 0 27.5px;
+}
+
+.parallax__item > div > div:nth-child(2) .title-text-alphabet-S {
+    margin-left: -24px;  /* 원래의 -ml-6 */
+}
+
+.parallax__item > div > div:nth-child(3) .title-text-alphabet-S {
+    margin-right: -20px;  /* 원래의 -mr-5 */
+}
+}
