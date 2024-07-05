@@ -9,35 +9,35 @@ import Lottie from 'lottie-react';
 // GSAP 플러그인 등록
 gsap.registerPlugin(ScrollTrigger);
 
-const BasicLottieExample = () => {
-    return (
-        <>
-            <div  className='lottie-item'>
-                <Lottie animationData={surfing} loop={true} />
-            </div>
-        </>
-    );
-  };
+// const BasicLottieExample = () => {
+//     return (
+//         <>
+//             <div  className='lottie-item'>
+//                 <Lottie animationData={surfing} loop={true} />
+//             </div>
+//         </>
+//     );
+//   };
 
-const ScrollDownAnimation = () => {
-    return (
-        <>
-            <div style={{ width: 200, height: 200 }} className='lottie-scrollDown'>
-                <Lottie animationData={scrollDown} loop={true} />
-            </div>
-        </>
-    )
-}
+// const ScrollDownAnimation = () => {
+//     return (
+//         <>
+//             <div style={{ width: 200, height: 200 }} className='lottie-scrollDown'>
+//                 <Lottie animationData={scrollDown} loop={true} />
+//             </div>
+//         </>
+//     )
+// }
 
-const WaveBottomAnimation = () => {
-    return (
-        <>
-            <div style={{ width: "100vw", height: "10px" }} className='lottie-wave-bottom'>
-                <Lottie animationData={waveBottom} loop={true}/>
-            </div>
-        </>
-    )
-}
+// const WaveBottomAnimation = () => {
+//     return (
+//         <>
+//             <div style={{ width: "100vw", height: "10px" }} className='lottie-wave-bottom'>
+//                 <Lottie animationData={waveBottom} loop={true}/>
+//             </div>
+//         </>
+//     )
+// }
 
 const AlPhabet = () => {
     window.onbeforeunload = function pushRefresh() {
@@ -210,9 +210,9 @@ const AlPhabet = () => {
                     <div className="title-text title-text-alphabet-U" />
                 </div>
             </div>
-            <BasicLottieExample />
+            {/* <BasicLottieExample />
             <ScrollDownAnimation />
-            <WaveBottomAnimation/>
+            <WaveBottomAnimation/> */}
        </div>
     )
 }
