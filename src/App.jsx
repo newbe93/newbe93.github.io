@@ -7,6 +7,9 @@ const App = () => {
   return (
     <>
         <AlPhabet/>
+        <div>
+          <h1>Additional Content</h1>
+        </div>
     </>
   );
 };

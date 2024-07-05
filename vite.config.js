@@ -2,9 +2,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [react()],
-  base: '/newbe93.github.io/',
+  base: command === 'serve' ? '/' : '/newbe93.github.io/',
   build: {
     outDir: 'docs',
     emptyOutDir: true,
@@ -36,4 +36,4 @@ export default defineConfig({
       }
     }
   },
-})
+}))
