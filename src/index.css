@@ -19,7 +19,7 @@ body{
 .title-text{
     width : 75px;
     height: 100px;
-    background-image: url('./src/assets/alphabetNoBg.png');
+    background-image: url('/src/assets/alphabetNoBg.png');
     background-repeat: no-repeat;
     background-size: 600px 1000px;
     z-index: 10;
