@@ -32,7 +32,7 @@ const ScrollDownAnimation = () => {
 const WaveBottomAnimation = () => {
     return (
         <>
-            <div style={{ width: "100vw", height: "10px" }} className='lottie-wave-bottom'>
+            <div style={{ width: "100vw" }} className='lottie-wave-bottom'>
                 <Lottie animationData={waveBottom} loop={true}/>
             </div>
         </>
@@ -143,19 +143,20 @@ const AlPhabet = () => {
         .to(".lottie-item", {
             xPercent : 0,
             opacity : 1,
-            duration : 10,
+            duration : () => window.innerWidth < 392 ? 50 : 10,
             rotation : 0,
             scale : 1
         })
 
         bg.from(".lottie-wave-bottom",{
-            yPercent : -100,
-            opacity : 0
+            yPercent : 100,
+            opacity : 0,
+            duration : 50
         })
         .to(".lottie-wave-bottom",{
-            yPercent : 100,
+            yPercent : 30,
             opacity : 1,
-            duration : 10
+            duration : 50
         })
 
         gsap.fromTo(".lottie-scrollDown", 
