@@ -143,21 +143,21 @@ const AlPhabet = () => {
         .to(".lottie-item", {
             xPercent : 0,
             opacity : 1,
-            duration : () => window.innerWidth < 392 ? 50 : 10,
+            duration : 50,
             rotation : 0,
             scale : 1
-        })
+        },0)
 
         bg.from(".lottie-wave-bottom",{
             yPercent : 100,
             opacity : 0,
-            duration : 50
-        })
+            
+        },0)
         .to(".lottie-wave-bottom",{
             yPercent : 30,
             opacity : 1,
             duration : 50
-        })
+        },0)
 
         gsap.fromTo(".lottie-scrollDown", 
             {opacity : 1},

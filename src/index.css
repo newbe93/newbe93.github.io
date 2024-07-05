@@ -120,10 +120,17 @@ body{
     bottom: 0;
 }
 
-@media (min-width : 392px){
+/* 392px보다 클때 */
+@media (min-width : 440px){ 
     .lottie-item {
         width:500px;
-        height: 500px;
+        height:500px;
+        left: 25%;
+        top: 5%;
+    }
+
+    .lottie-wave-bottom{
+        height: 1000px;
     }
 
     .title-text{
