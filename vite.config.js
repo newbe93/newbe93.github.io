@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig(({ command }) => ({
   plugins: [react()],
-  base: command === 'serve' ? '/' : '/newbe93.github.io/',
+  base: "/",
   build: {
     outDir: 'docs',
     emptyOutDir: true,
